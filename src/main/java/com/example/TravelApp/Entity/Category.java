@@ -21,7 +21,7 @@ public class Category {
 private long id;
 private  String name;
 
-//Showing Relationship between tables
+//Showing Relationship
 @ManyToMany(mappedBy = "categories")
 private Set<Destination> destinations = new HashSet<>();
 
